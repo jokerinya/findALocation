@@ -1,0 +1,107 @@
+<template>
+  <div class="about">
+    <header>
+      <h1>{{ header }}</h1>
+    </header>
+
+    <section id="selected-place">
+      <Map />
+    </section>
+
+    <section id="share-controls" @click="cleanIt">
+      <router-link to="/">Share a New Place!</router-link>
+    </section>
+  </div>
+</template>
+
+<script>
+import Map from "./components/Map";
+import { mapMutations } from "vuex";
+export default {
+  name: "Share",
+  components: {
+    Map
+  },
+  computed: {
+    header() {
+      return this.$store.state.myAddress;
+    }
+  },
+  methods: {
+    ...mapMutations([
+      "changeLocation", //also supports payload `this.nameOfMutation(amount)`
+      "changeAddress",
+      "showMapMutation"
+    ]),
+    cleanIt() {
+      this.showMapMutation(false);
+    }
+  }
+};
+</script>
+
+<style>
+label,
+input {
+  display: block;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+input {
+  font: inherit;
+  padding: 0.15rem 0.25rem;
+  border: 1px solid #ccc;
+  font-size: 3rem;
+  text-align: center;
+  color: #696969;
+}
+
+input:focus {
+  outline: none;
+  background: #efe3ff;
+  border-color: #36007c;
+}
+
+#selected-place {
+  width: 40rem;
+  height: 25rem;
+  max-width: 90%;
+  margin: 2rem auto;
+  border: 1px solid #ccc;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#share-controls {
+  width: 40rem;
+  max-width: 90%;
+  margin: 2rem auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+#share-controls input {
+  font-size: 1.15rem;
+}
+
+#place-data {
+  width: 40rem;
+  max-width: 90%;
+  margin: 2rem auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+</style>

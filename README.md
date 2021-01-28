@@ -1,8 +1,7 @@
-# location
+# Find Location 
 
-This project is sister of my other course project
-"https://js-static-trial.web.app/" with Acedemind.
-I just made the same project with Vue
+This project has same functionalty with my other course [project](https://js-static-trial.web.app/) with [Acedemind Udemy Course](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/).
+I just made the same project with VueJS instead of Vanilla JS.
 
 ## Project setup
 

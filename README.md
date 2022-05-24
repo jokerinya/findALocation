@@ -1,7 +1,22 @@
-# Find Location 
+# Find A Location 
 
-This project has same functionalty with my other course [project](https://js-static-trial.web.app/) with [Acedemind Udemy Course](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/).
-I just made the same project with VueJS instead of Vanilla JS.
+This is a self-learning small project. 
+
+Normally this project has been done in <a href="https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/" target="_blank">Acedemind</a> `JavaScript` course by `Vanilla JS`. ***But I made I just made the same project with `Vue2`.***
+
+👉This site is online at <a href="https://jokerinya-findalocation.netlify.app/" target="_blank">here</a> 
+
+![Capture.PNG](Capture.PNG)
+
+
+## In this course I learned and practiced
+
+- How to transfer a plain `JS` enviroment to `VueJS` enviroment,
+- `Open Street Map` usage,
+- `Vuex` and `VueRouter`.  
+  
+  <small>I made this project in 2020.</small>
+
 
 ## Project setup
 
@@ -30,3 +45,4 @@ npm run lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
